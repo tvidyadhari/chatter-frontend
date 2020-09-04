@@ -72,6 +72,7 @@ span {
 }
 .Toastify__toast-container {
   text-align: center;
+  z-index: 100000000;
 }
 
 .btn {
