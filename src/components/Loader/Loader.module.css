@@ -1,0 +1,28 @@
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner {
+  /* text-indent: -9999em; */
+}
+.spinner * {
+  display: none;
+}
+
+.spinner:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -10px;
+  margin-left: -10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 3.5px solid #fff;
+  border-top-color: var(--btn-clr);
+  animation: spinner 0.6s linear infinite;
+  z-index: 100;
+}

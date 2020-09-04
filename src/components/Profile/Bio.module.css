@@ -1,0 +1,58 @@
+.bio {
+  background-color: #fff;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
+  padding: 0.75em;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(166, 173, 201, 0.2);
+}
+.user-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.user-info svg {
+  width: 4em;
+  height: 4em;
+}
+.author {
+  margin-left: 1em;
+}
+.name {
+  font-size: 1.25rem;
+}
+.username {
+  font-size: 0.85rem;
+}
+.user-meta {
+  margin-top: 0.5em;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.tmp {
+  display: flex;
+}
+.Follow {
+  padding: 0.25em 0.5em !important;
+  border-radius: 5px;
+  font-size: 0.85rem !important;
+  border: 2px solid var(--btn-clr) !important;
+}
+.Unfollow {
+  padding: 0.25em 0.5em !important;
+  border-radius: 5px;
+  font-size: 0.85rem !important;
+  background: unset !important;
+  color: var(--btn-clr) !important;
+  border: 2px solid var(--btn-clr) !important;
+}
+.value {
+  opacity: 0.7;
+  padding: 0 5px;
+}
+.key {
+  margin-right: 0.5em;
+}

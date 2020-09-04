@@ -1,0 +1,151 @@
+:root {
+  font-size: 20px;
+  --ff-primary: "Raleway", sans-serif;
+  --ff-secondary: "Quicksand", sans-serif;
+
+  --primary-bg: #ecf1f3;
+  --primary-bg: #edf2f7;
+
+  --btn-clr: #90caf9;
+  --font-clr: #32474e;
+
+  --bs: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(166, 173, 201, 0.2);
+
+  background-color: var(--primary-bg);
+}
+
+*,
+*::before,
+*::after {
+  letter-spacing: 1px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--ff-secondary);
+  font-size: 1rem;
+  /* -moz-osx-font-smoothing: grayscale; */
+}
+#root,
+input,
+button {
+  color: var(--font-clr);
+}
+button:focus {
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--ff-primary);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 2rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
+span {
+  font-size: 0.85rem;
+  color: #50727c;
+}
+
+p {
+  font-weight: 450;
+}
+span {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--gray800);
+}
+.Toastify__toast-container {
+  text-align: center;
+}
+
+.btn {
+  border: none;
+  background-color: var(--btn-clr);
+  padding: 1em 2em;
+  font-weight: 600;
+  color: #3c555d;
+  /* color: ghostwhite; */
+}
+
+.btn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+@media (max-width: 500px) {
+  :root {
+    font-size: 16px;
+  }
+}
+
+.Toastify__toast--error {
+  background: hsl(347, 75%, 91%);
+  background: #fef1f0;
+  color: hsl(348, 86%, 43%) !important;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+.btn-outline {
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  border-radius: 5px;
+  background: unset;
+  color: var(--btn-clr) !important;
+  border: 2px solid var(--btn-clr) !important;
+}
+
+/* spinner */
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner {
+  text-indent: -9999em;
+}
+.spinner * {
+  display: none;
+}
+
+.spinner:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -10px;
+  margin-left: -10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 3.5px solid #fff;
+  border-top-color: var(--btn-clr);
+  animation: spinner 0.6s linear infinite;
+  z-index: 100;
+}
+button {
+  position: relative;
+}

@@ -1,0 +1,79 @@
+.suggestions {
+  background-color: #fff;
+  justify-self: center;
+  border-radius: 10px;
+  box-shadow: var(--bs);
+  height: max-content;
+  position: relative;
+}
+.suggestions-item {
+  display: flex;
+  align-items: center;
+  padding: 1em;
+}
+.user-info {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-evenly; */
+}
+.user-info span,
+.user-info p {
+  margin-left: 0.5em;
+}
+
+.suggestions-item + .suggestions-item {
+  border-top: 1px solid #ccc;
+}
+.suggestions-item a {
+  width: 100%;
+}
+.user-card {
+  display: flex;
+  margin-left: 1em;
+  align-items: center;
+}
+.user-card button {
+  margin-left: auto;
+}
+.all-info {
+  margin-left: 0.85em;
+}
+.Follow {
+  padding: 0.25em 0.5em !important;
+  border-radius: 5px;
+  font-size: 0.85rem !important;
+  border: 2px solid var(--btn-clr) !important;
+}
+.Unfollow {
+  padding: 0.25em 0.5em !important;
+  border-radius: 5px;
+  font-size: 0.85rem !important;
+  background: unset !important;
+  color: var(--btn-clr) !important;
+  border: 2px solid var(--btn-clr) !important;
+  margin-left: auto;
+}
+.heading {
+  text-align: center;
+  padding: 1em 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.user-meta {
+  margin-top: 0.5em;
+  display: flex;
+
+  justify-content: space-between;
+}
+.value {
+  opacity: 0.7;
+  padding: 0 5px;
+}
+.key {
+  margin-right: 0.5em;
+}
+@media (min-width: 1001px) {
+  .suggestions {
+    margin-top: 5em;
+  }
+}
